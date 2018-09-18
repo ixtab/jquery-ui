@@ -22,7 +22,12 @@ $(document).ready(function() {
             var color_rgb = calcular_fondo_pizarra(color_pizarra, color_div_movido);
             $(this).css("background-color", color_rgb);
 
-            div_movido.css("height", "148px").css("width", "148px");
+            div_movido.effect("size", {
+                to: {
+                    width: 148,
+                    height: 148
+                }
+            }, 1000); // Efecto UI.
             if (div_movido.attr("id") == "rojo") {
                 div_movido.css("background", "#f00");
             } else if (div_movido.attr("id") == "verde") {
