@@ -1,0 +1,13 @@
+body {
+    margin: 0 25%;
+    width: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+.ui-tooltip {
+    box-shadow: 0 0 5px red;
+}
+
+.no-close .ui-dialog-titlebar-close {
+    display: none;
+  }

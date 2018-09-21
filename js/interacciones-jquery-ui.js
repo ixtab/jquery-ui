@@ -4,6 +4,8 @@ $(document).ready(function() {
     elemento.draggable(); // Mueve un elemento por la pág.
     elemento.resizable(); // Deja cambiar el tamaño
 
+    $( document ).tooltip();
+
     $(".selectable").selectable();
 
     $("#elemento-movido").draggable();
