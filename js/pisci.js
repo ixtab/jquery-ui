@@ -27,7 +27,7 @@ $(document).ready(function() {
                     width: 148,
                     height: 148
                 }
-            }, 1000); // Efecto UI.
+            }, 1000); // Efecto UI. Si se quiere ocultar/mostrar es .toggle("size"), {}..., en vez de .effect
             if (div_movido.attr("id") == "rojo") {
                 div_movido.css("background", "#f00");
             } else if (div_movido.attr("id") == "verde") {
