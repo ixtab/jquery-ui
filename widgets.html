@@ -11,7 +11,7 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-ui-1.12.1/jquery-ui.js"></script>
     <script src="js/widgets.js"></script>
-    <script src="js/datepicker-eu.js"></script>
+    <script src="js/datepicker-es.js"></script>
 </head>
 
 <body>
@@ -30,12 +30,32 @@
 
     <hr>
 
-    <h3>Calendario 1</h3>
-    <input type="text" id="calendario">
-    <h3>Calendario 2</h3>
-    <div id="calendario2"></div>
-    <h3>Calendario 3</h3>
-    <div id="inputDate"></div>
+    <h3>Calendarios en pestañas</h3>
+    <div id="pestanas">
+        <ul>
+            <li>
+                <a href="#c1">Calendario 1</a>
+            </li>
+            <li>
+                <a href="#c2">Calendario 2</a>
+            </li>
+            <li>
+                <a href="#c3">Calendario 3</a>
+            </li>
+        </ul>
+        <div id="c1">
+            <h3>Calendario 1</h3>
+            <input type="text" id="calendario">
+        </div>
+        <div id="c2">
+            <h3>Calendario 2</h3>
+            <div id="calendario2"></div>
+        </div>
+        <div id="c3">
+            <h3>Calendario 3</h3>
+            <div id="calendario3"></div>
+        </div>
+    </div>
 
 </body>
 

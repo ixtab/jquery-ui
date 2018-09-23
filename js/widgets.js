@@ -28,6 +28,8 @@ $(document).ready(function() {
         });
     });
 
+    $("#pestanas").tabs();
+
     $("#calendario").datepicker();
     $.datepicker.setDefaults($.datepicker.regional["eu"]);
     $("#calendario2").datepicker({
@@ -43,18 +45,19 @@ $(document).ready(function() {
 
         })
     });
+    var fecha;
     $.datepicker.setDefaults($.datepicker.regional["eu"]);
-    $('#inputDate').datepicker({
+    $('#calendario3').datepicker({
         format: 'm/d/yy',
-        date: $('#inputDate').val(),
-        current: $('#inputDate').val(),
+        date: $('#calendario3').val(),
+        current: $('#calendario3').val(),
         starts: 1,
         position: 'r',
         changeMonth: true,
+        yearRange: "1900:2020",
         changeYear: true,
         onBeforeShow: function() {
-            $('#inputDate').datepickerSetDate($('#inputDate').val(), true);
+            $('#calendario3').datepickerSetDate($('#calendario3').val(), true);
         }
     });
-
 });
